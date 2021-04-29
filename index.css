@@ -1,0 +1,176 @@
+
+@charset "utf-8";
+/* CSS Document */
+html, div, h1, h2, h3, h4, h5, h6, p,img {} 
+/*height for HTML and BODY set the maximum size of a window*/
+/*ol, ul, li,  embed,  figure, figcaption, footer, header, hgroup,  menu, nav, output, section, article, aside, details, figcaption, figure,  footer, 
+header, hgroup, menu, nav, section,  { display: block; } */
+p{
+	font-family: "Lucida Sans Unicode","Lucida Grande", sans-serif;
+	}
+
+	body {
+
+}
+
+
+/* unvisited link */
+		a:link {
+		  color: #FFF8DC;
+		  text-decoration: none;
+		}
+
+		/* visited link */
+		a:visited {
+		  color: #FFF8DC;
+		}
+
+		/* mouse over link */
+		a:hover {
+		  color: #9999FF;
+		}
+
+		/* selected link */
+		a:active {
+		  color: #FFF8DC;
+		}
+
+		p {
+			  text-align: center; 
+		}
+
+		body {
+		  background-image: url('original.jpg');
+		  background-repeat: no-repeat;
+		  background-attachment: fixed; 
+		  background-size: 1460px 900px;
+
+		}
+
+
+		h1 {
+		font-size: 56px;
+		font-style: "Lucida Sans";
+		margin-left: 370px;
+		color: white;
+		 letter-spacing: 5px;
+	  margin-top: 50px;
+	 
+		 
+		}
+
+		h2 {
+		  letter-spacing: 7px;
+		}
+		h3 {
+		font-size: 16px;
+		font-style: "Lucida Sans";
+		margin-left: 600px;
+		 letter-spacing: 5px;
+		  margin-top: 50px;
+		  font-weight: bold;
+
+		}
+
+
+
+#cloud {
+	width: 364px;
+	height: 205px;
+	top: 50px;
+	left: 600px;
+	position: absolute;
+	opacity: 50%;
+    animation-name: moving;
+    animation-duration: 16s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+    animation-play-state: initial; 
+}
+
+#cloud2 {
+	width: 364px;
+	height: 205px;
+	top: 20px;
+	left: 325px;
+	position: absolute;
+    animation-name: movingg;
+    animation-duration: 16s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+    animation-play-state: initial; 
+    opacity: 30%;
+}
+
+#cherub {
+	width: 80px;
+	height: 108px;
+	top: 680px;
+	left: 1480px;
+	position: absolute;
+	 animation-name: plane;
+    animation-duration: 10s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+    animation-play-state: initial; 
+    
+}
+	
+	@keyframes moving {
+    0% {
+        transform: translate3d(50px, 0px, 50px);
+        animation-timing-function: ease-in;
+    }
+    50% {
+        transform: translate3d(400px, 0px, 400px);
+        animation-timing-function: ease-out;
+    }
+    100% {
+        transform: translate3d(1000px, 0px, 1000px);
+    }
+}
+
+@keyframes movingg {
+    0% {
+        transform: translate3d(-50px, 0px, 50px);
+        animation-timing-function: ease-in;
+
+    }
+    50% {
+        transform: translate3d(-400px, 0px, 400px);
+        animation-timing-function: ease-out;
+    }
+    100% {
+        transform: translate3d(-1000px, 0px, 1000px);
+    }
+}
+
+@keyframes plane {
+    0% {
+        transform: translate(-50px, -50px, 90px);
+        animation-timing-function: ease-in;
+        transform: rotateZ(-50deg);
+    }
+    50% {
+        transform: translate3d(-1000px, -40px, 0px);
+        animation-timing-function: ease-out;
+    }
+    100% {
+        transform: translate3d(-1300px, -800px, 0px);
+
+    }
+}
+    
+   
+    
+
+
+
+
+
+
+
+
+
+
+
